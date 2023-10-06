@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flex property</title>
+        <style>
+            div{
+                margin: 12px;
+                padding: 12px;
+                border: 12px solid orange;
+            }
+            #pdiv1{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            #pdiv2{
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            #cdiv1{
+                border: 12px solid brown;
+                width: 70px;
+                height: 70px;
+                color: brown;
+            }
+            #cdiv2{
+                border: 12px solid black;
+                width: 70px;
+                height: 70px;
+                color: black;
+            }
+            #cdiv3{
+                border: 12px solid purple;
+                width: 70px;
+                height: 70px;
+                color: purple;
+            }
+            #cdiv4{
+                border: 12px solid red;
+                width: 70px;
+                height: 70px;
+                color: red;
+            }
+            #cdiv5{
+                border: 12px solid green;
+                width: 70px;
+                height: 70px;
+                color: green;
+            }
+            .cnumber{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="pdiv1">
+            <div id="cdiv1">
+                <h1>S</h1>
+            </div>
+            <div id="cdiv2">
+                <h1>H</h1>
+            </div>
+            <div id="cdiv3" class="cnumber">
+                <h1>I</h1>
+            </div>
+            <div id="cdiv4" class="cnumber">
+                <h1>N</h1>
+            </div>
+            <div id="cdiv5" class="cnumber">
+                <h1>E</h1>
+            </div>
+        </div>
+    </body>
+</html>
