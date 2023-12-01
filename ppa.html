@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ppa.css">
+    <title>Enter you profile</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal information</h1>
+
+        <form action="" target="_blank" id="personalInfoForm">
+            <label for="photo">Profile photo:</label>
+            <input type="file" id="photo">
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" rows="3" required></textarea>
+
+
+            <label for="education">Education background:</label>
+            <buttton type="button" onclick="addEducation()">Add Education</buttton>
+            <table id="educationTable"></table>
+
+            <label for="experience">Working experience:</label>
+            <textarea id="experince" rows="3" required></textarea>
+
+            <h5>Skills</h5>
+            <p>
+                <input type="checkbox" id="swimming" class="checkskill">
+                <label for="swimming">swimming</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="reading" class="checkskill">
+                <label for="reading">Reading</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="dancing" class="checkskill">
+                <label for="dancing">Dancing</label>
+            </p>
+            
+            
+
+            <button type="button" onclick="sendDetails()">submit</button>
+    
+        </form>
+    </div>
+    <script src="ppa.js"></script>
+</body>
+</html>
