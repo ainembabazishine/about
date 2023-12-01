@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINEMBABAZI SHINE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body id="profile">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5 right">
+                <div class="imagecontent flex-column d-flex p-4 justify-content-center align-items-center">
+                    <div class="imagediv">
+                        <img src="image.jpeg" alt="me" height="150px" width="150px">
+                    </div>
+                </div>
+                <div class="info">
+                    <div>
+                        <h3 id="profiletitle">My Profile</h3>
+                    <hr>
+                        <h3>Contacts</h3>
+                        <p><span class="fw-bold">Phone: </span> <span id="display-contact"></span>
+                             </p>
+                        <p><span class="fw-bold">Email: </span> <span id="display-email"></span>
+                             </p>
+                        <p><span class="fw-bold">Address: </span> <span id="display-address"></span>
+                             </p>
+                    </div>
+                    
+                    <hr>
+                    <div>
+                        <h3>Interests</h3>
+                    
+                        <ul>
+                            <li>Meditation</li>
+                            <li>Sustainability</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>English</li>
+                            <li>Kiswahili</li>
+                            <li>Runyankore</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-7 left">
+                <div class="name">
+                    <h3><span id="display-name"></span></h3>
+                    <p>This resume generally describes me as a hardworking talented 21 year old female Ugandan from Ntungamo. More so, including my current work such as the ongoing  projects I have been working on.</p>
+                </div>
+                <div class="educ">
+                    <h3>Education Background</h3>
+                    
+                    <h5>University</h5>
+                    <p>I am at Muni University pursuing my Bachelors degree in year one.</p>
+                    <h5>Secondary level</h5>
+                    <p>I completed my high school from Kabale Trinity College. I studied there for both O and A levels</p>
+                    <h5>Primary Level</h5>
+                    <p>I did primary level from Kitwe Town School</p>
+                </div>
+                <div>
+                    <h3>Voluntary Experience</h3>
+                    
+                    <h5>Data analyst</h5>
+                    <p>Participation in entry and analysis of data of clients  </p>
+
+                </div>
+                <div>
+                    <h3>Skills</h3>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Communication</li>
+                            <li>Decision making</li>
+                        </ul>
+                        <span id="display-skill"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer container-fluid m-0 text-white text-center bg-dark border-top border-2 border-primary">
+        <p class="bg-dark m-0 pb-3">$copy Shine <a href="#">Resume Generator</a> </p>
+    </div>
+    <script>
+        let nameSpace = document.getElementById("display-name");
+        let emailSpace = document.getElementById("display-email");
+        let skillSpace = document.getElementById("display-skill");
+        let contactSpace = document.getElementById("display-contact");
+        let addressSpace = document.getElementById("display-address");
+        
+        
+        let myContact = localStorage.getItem("contact");
+        let myName = localStorage.getItem("name");
+        let myEmail = localStorage.getItem("email");
+        let myAddress = localStorage.getItem("address");
+        let mySkills = localStorage.getItem("address");
+        nameSpace.textContent = myName;
+        contactSpace.textContent = myContact;
+        emailSpace.textContent = myEmail;
+        addressSpace.textContent = myAddress;
+
+        skillSpace.append(skill);
+    </script>
+</body>
+</html>
